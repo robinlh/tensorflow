@@ -476,7 +476,7 @@ def check_bazel_version(min_version, max_version):
   Returns:
     The bazel version detected.
   """
-  bazel_executable = which('bazel')
+  bazel_executable = which('bazelisk')
   if bazel_executable is None:
     bazel_executable = which('bazelisk')
     if bazel_executable is None:
